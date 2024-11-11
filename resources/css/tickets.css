@@ -1,0 +1,44 @@
+.ticket-container {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fdfdfd;
+    padding: 0;
+    position: relative;
+}
+
+.ticket-content {
+    padding: 1.5rem;
+    position: relative;
+}
+
+.separator {
+    border-top: 1px dashed #ccc;
+    margin: 0;
+}
+
+.ticket-actions {
+    border-top: none;
+    padding: 1rem;
+}
+
+.ticket-container:before, .ticket-container:after {
+    content: '';
+    position: absolute;
+    background: #fdfdfd;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.ticket-container:before {
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+}
+
+.ticket-container:after {
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+}
